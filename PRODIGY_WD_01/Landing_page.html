@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>landing page</title>
+    <link rel="stylesheet" href="Landing_page.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="icon">
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="logo"><span>N</span>a<span>W</span>a<span>b</span></div>
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li class="fa-solid fa-house-user"><a href="#home">HOME</a></li>
+
+          <li class="fa-solid fa-address-card"><a href="#about">ABOUT</a></li>
+          <li class="fa-brands fa-servicestack">
+            <a href="#contact">CONTACT</a>
+          </li>
+          <li class="fa-solid fa-message"><a href="#services">SERVICES</a></li>
+        </ul>
+      </div>
+      <div class="auth">
+        <input type="text" class="srch" placeholder="Search..." />
+        <button class="btn">Search</button>
+      </div>
+    </nav>
+
+    <div class="main">
+      <div class="content" id="home">
+        <h1>Web <span>Development</span></h1>
+        <p>
+          We are excited to announce course of web development encompasses
+          designing, constructing, and maintaining websites and web
+          applications. It spans various disciplines including front-end
+          development (client-side), back-end development (server-side), and
+          full-stack development. This field involves coding in languages like
+          HTML, CSS, and JavaScript, alongside using frameworks and tools to
+          craft functional and visually appealing web experiences.
+        </p>
+        <a href="#about" class="cn">JOIN US</a>
+      </div>
+    </div>
+
+    <section class="section" id="about">
+      <h2>About Us</h2>
+      <p>
+        As a skilled web developer,I specialize in creating dynamic and user-friendly websites. With a keen eye for design and a strong foundation in coding,I bring innovative solutions to every project. Proficient in HTML, CSS, JavaScript, and various web development frameworks, I transform ideas into responsive, visually appealing, and functional websites. My passion for technology and continuous learning keeps me updated with the latest trends and best practices in web development. I thrive in collaborative environments and am dedicated to delivering high-quality results that exceed client expectations.t.
+      </p>
+    </section>
+
+    <section class="section" id="services">
+      <h2>Our Services</h2>
+      <div class="cards">
+        <div class="card">
+          <h3><span>Front-end</span> Developer</h3>
+          <p>As a front-end developer, I specialize in crafting visually appealing, user-friendly interfaces. Proficient in HTML, CSS, JavaScript, and various frameworks, I transform designs into responsive, interactive websites. My focus is on creating seamless user experiences, ensuring high performance and accessibility across all devices.</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="card">
+          <h3><span>Back-end</span>  Developer</h3>
+          <p>
+            As a back-end developer, I specialize in server-side logic and database management. Proficient in languages like Python, Java, and PHP, I build and maintain robust, scalable, and secure server applications. My focus is on ensuring smooth data flow, integrating APIs, and optimizing performance to support seamless user experiences.</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="card">
+          <h3><span>Full stack</span> Developer</h3>
+          <p>A full stack developer is proficient in both front-end and back-end web development. They work with a range of technologies and frameworks, including HTML, CSS, JavaScript for the front-end, and server-side languages like Node.js, Python, or Ruby, along with databases such as MySQL or MongoDB.</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+
+        <div class="card">
+          <h3> <span>MERN stack</span> Developer</h3>
+          <p>The MERN stack consists of MongoDB, Express.js, React.js, and Node.js. It is a JavaScript-based framework for developing web applications. MongoDB handles the database, Express.js serves as the back-end framework, React.js manages the front-end, and Node.js operates as the server environment.</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="card">
+          <h3><span>C++</span>Programming </h3>
+          <p>C++ is a powerful, general-purpose programming language known for its performance and flexibility. It supports procedural, object-oriented, and generic programming paradigms. C++ is widely used for system/software development, game development, real-time simulation, and applications requiring high performance. Its syntax is similar to C, with added features like classes and objects.</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="card">
+          <h3><span>Python</span> programming</h3>
+          <p>Python is a versatile, high-level programming language known for its simplicity and readability. It emphasizes code readability and ease of use, making it ideal for beginners and experienced developers alike. Python supports multiple programming paradigms, including procedural, object-oriented, and functional programming. It's widely used in web development, data analysis, artificial intelligence, scientific computing, and automation.</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-form">
+        <input type="text" id="name" placeholder="Full Name" required />
+        <input type="tel" id="phone" placeholder="Phone" required />
+        <input type="email" id="email" placeholder="Email" required />
+
+        <textarea id="message" placeholder=" Your Message" required></textarea>
+        <button class="btnn" onclick="validateForm()">SEND</button>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 <span>N</span>a<span>W</span>a<span>b</span> All rights reserved.</p>
+      <div class="social">
+        <a href=""><i class="fa-brands fa-square-youtube"></i>  </a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a> 
+
+        <a href="#"><i class="fab fa-instagram"></i></a>
+
+      </div>
+    </footer>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="Landing_page.js"></script>
+  </body>
+</html>

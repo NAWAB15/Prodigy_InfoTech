@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #f0f0f0;
+}
+
+.stopwatch {
+    background: white;
+    padding: 20px;
+    border: outset
+    ;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-areas: 
+        "time"
+        "controls"
+        "laps";
+    gap: 20px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+#time-display {
+    font-size: 3rem;
+    grid-area: time;
+    background-color: rgb(167, 226, 226);
+    border: outset rgb(167, 226, 226);
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-area: controls;
+}
+
+.controls button {
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: whitesmoke;
+    background-color: rgb(63, 143, 81);
+    border: outset rgb(63, 143, 56);
+}
+
+.controls button:hover{
+  background-color:blue;
+  color: rgb(255, 255, 255);
+  border: outset blue;
+}
+#laps {
+    grid-area: laps;
+}
+
+#laps h3 {
+    margin: 0;
+    text-decoration: underline;
+    
+}
+
+#laps-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+#laps-list li {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: rgb(167, 226, 226);
+    border-radius: 5px;
+    font-size: 2rem;
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1024px) {
+    .stopwatch {
+        grid-template-areas: 
+            "time time"
+            "controls controls"
+            "laps laps";
+    }
+
+    .controls {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 600px) and (max-width: 1023px) {
+    .stopwatch {
+        grid-template-areas: 
+            "time"
+            "controls"
+            "laps";
+        max-width: 600px;
+    }
+
+    .controls {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small screens (mobiles) */
+@media (max-width: 599px) {
+    #time-display {
+        font-size: 2rem;
+    }
+
+    .controls button {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+}
